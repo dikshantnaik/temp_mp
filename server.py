@@ -12,7 +12,7 @@ def stress_cpu():
 @app.route("/", methods=["GET"])
 def get_private_ip():
     private_ip = socket.gethostbyname(socket.gethostname())
-    return f"Private IP Address: {private_ip}"
+    return f"{private_ip}"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=80)
